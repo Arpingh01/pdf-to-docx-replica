@@ -1,52 +1,52 @@
-#PDF to MS Word Replication using Python
-Overview
+# PDF to MS Word Replication using Python
+## Overview
 
-This project recreates a given legal PDF document (Mediation Application Form – Form ‘A’) into an MS Word (.docx) file using Python.
-The goal is to replicate the content, layout, structure, spacing, and alignment of the PDF as closely as possible through programmatic document generation.
+### This project recreates a given legal PDF document (Mediation Application Form – Form ‘A’) into an MS Word (.docx) file using Python.
+### The goal is to replicate the content, layout, structure, spacing, and alignment of the PDF as closely as possible through programmatic document generation.
 
-Problem Statement
+## Problem Statement
 
 Convert the provided PDF file into an MS Word document by:
 
-Preserving the exact structure and order of sections
+1. Preserving the exact structure and order of sections
 
-Maintaining headings, numbering, and placeholders
+2. Maintaining headings, numbering, and placeholders
 
-Recreating the form layout using tables
+3. Recreating the form layout using tables
 
-Avoiding manual editing or auto-conversion tools
+4. Avoiding manual editing or auto-conversion tools
 
-Approach
+## Approach
 
-Analyzed the PDF to understand its table-based layout
+1. Analyzed the PDF to understand its table-based layout
 
-Identified that the form is structured as a single multi-row table
+2. Identified that the form is structured as a single multi-row table
 
-Used python-docx to generate the Word document from scratch
+3. Used python-docx to generate the Word document from scratch
 
-Recreated:
+4. Recreated:
 
-Centered headers
+    Centered headers
 
-Section titles
+   Section titles
 
-Applicant and Opposite Party details
+   Applicant and Opposite Party details
 
-Conditional placeholders
+   Conditional placeholders
 
-“Details of Dispute” section
+   “Details of Dispute” section
 
-Used table borders and merged cells to match the form layout
+    Used table borders and merged cells to match the form layout
 
-Technologies Used
+## Technologies Used
 
-Python 3.x
+1. Python 3.x
 
-python-docx
+2. python-docx
 
-Google Colab
+3. Google Colab
 
-Project Structure
+## Project Structure
 pdf-to-docx-replica/
 │
 ├── pdf_to_docx.ipynb
@@ -54,25 +54,24 @@ pdf-to-docx-replica/
 ├── django_assignment.pdf
 ├── README.md
 
-How to Run
+## How to Run
 
-Open the Google Colab notebook (pdf_to_docx.ipynb)
+1. Open the Google Colab notebook (pdf_to_docx.ipynb)
 
-Install dependencies:
+2. Upload django_assignment.pdf
 
-pip install python-docx
+3. Install dependencies:
 
+4. Run all cells
 
-Run all cells
+5. Download the generated Word file
 
-Download the generated Word file
+## Output
 
-Output
+1. Mediation_Application_Form_FINAL.docx
 
-Mediation_Application_Form_FINAL.docx
+2. Fully structured legal form
 
-Fully structured legal form
+3. Matches the original PDF layout and content
 
-Matches the original PDF layout and content
-
-Generated entirely using Python
+4. Generated entirely using Python
